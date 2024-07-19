@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrobien</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 500px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .redirect {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .redirect a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .redirect a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+
+        function redirect() {
+            setTimeout(function() {
+                window.location.href = './login.html';
+            }, 3000);
+        }
+    </script>
+</head>
+
+<body onload="redirect()">
+    <div class="container">
+        <h1>Registro Confirmado</h1>
+        <p>Tu registro se ha completado con éxito.</p>
+        <p class="redirect">Serás redirigido al inicio de sesion en breve. Si no eres redirigido automáticamente, haz clic <a href="./login.html">aquí</a>.</p>
+    </div>
+</body>
+
+</html>
