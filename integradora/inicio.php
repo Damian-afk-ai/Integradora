@@ -9,20 +9,29 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <header class="bg-dark sticky-top w-100">
-            <div class="container">
-                <nav class="navbar">
-                    <a href="#" class="navbar-brand">
-                        <img src="./img/logo.png" alt="Logo" height="60">
-                    </a>
-                    <ul class="nav fs-5">
-                        <li class="nav-item"><a href="./inicio.php" class="text-white nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="./catalogo.php" class="text-white nav-link">Catalogo</a></li>
-                        <li class="nav-item"><a href="./login.html" class="text-white nav-link">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <?php
+    session_start();
+    ?>
+    <header class="bg-dark sticky-top w-100">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="navbar-brand">
+                    <img src="./img/logo.png" alt="Logo" height="60">
+                </a>
+                <ul class="nav fs-5">
+                    <li class="nav-item"><a href="./inicio.php" class="text-white nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="./catalogo.php" class="text-white nav-link">Catálogo</a></li>
+                    <?php
+                    if (isset($_SESSION['usuario'])) {
+                        echo '<li class="nav-item"><a href="./php/logout.php" class="text-white nav-link">Cerrar Sesión</a></li>';
+                    } else {
+                        echo '<li class="nav-item"><a href="./login.html" class="text-white nav-link">Login</a></li>';
+                    }
+                    ?>
+                </ul>
+            </nav>
+        </div>
+    </header>
         <!-- inicio Section -->
         <section id="eslogan">
             <div class="row">
