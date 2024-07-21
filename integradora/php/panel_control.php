@@ -24,7 +24,7 @@
                             <img src="" alt="" width="30">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                            <li><a class="dropdown-item" href="../login.html">Cerrar Sesión</a></li>
+                        <li class="nav-item"><a href="./logout.php" class=" nav-link">Cerrar Sesión</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,6 +50,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="?page=empleado">
                                 Empleados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=sucursal">
+                                Sucursales
                             </a>
                         </li>
                         <li class="nav-item">
@@ -89,6 +94,9 @@
                             case 'reportes':
                                 require_once './reporte/panel_reporte.php';
                                 break;
+                                case 'sucursal':
+                                    require_once './sucursal/panel_sucursal.php';
+                                    break;
                             default:
                                 echo '<h1>Bienvenido al Panel de Control</h1>';
                         }
