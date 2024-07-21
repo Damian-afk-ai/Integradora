@@ -36,8 +36,8 @@
                 <td><?php echo $row_data["nom_pro"]; ?></td>
                 <td><?php echo $row_data["desa_pro"];?></td>
                 <td><?php echo $row_data["desc_pro"];?></td>
-                <td><?php echo $row_data["cost_pro"];?></td>
-                <td><?php echo $row_data["prec_pro"];?></td>
+                <td>$<?php echo $row_data["cost_pro"];?></td>
+                <td>$<?php echo $row_data["prec_pro"];?></td>
                 <td><?php echo $row_data["nom_cat"];?></td>
                 <td><?php 
                 if ($row_data["est_pro"] == 1) {
