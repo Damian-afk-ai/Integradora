@@ -17,7 +17,7 @@ $query = "UPDATE USUARIO
 
 $stmt = mysqli_prepare($conn, $query);
 
-mysqli_stmt_bind_param($stmt, 'sssssi', 
+mysqli_stmt_bind_param($stmt, 'ssssssssi', 
     $_GET['nom_usu'], 
     $_GET['correo_usu'],
     $_GET['edad_usu'],
