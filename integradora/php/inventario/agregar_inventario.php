@@ -12,7 +12,7 @@
         <form action="./insert_inventario.php" method="get">
 
             <label class=" form-label mb-2">Producto</label>
-            <select name="id_pro" required>
+            <select name="id_pro" class="form-control mb-2" required>
             <?php
                 include '../connect.php';
                 
@@ -21,7 +21,7 @@
                 
                 while($row_data = mysqli_fetch_array($query_result)){
                     ?>
-                    <option value="<?php echo $row_data['id_pro']; ?>"><?php echo $row_data["nom_pro"]; ?></option>
+                    <option  value="<?php echo $row_data['id_pro']; ?>"><?php echo $row_data["nom_pro"]; ?></option>
                     
                     <?php
                 }
@@ -31,7 +31,7 @@
             <br>
 
             <label class="form-label mb-2">Sucursal</label>
-            <select name="id_suc">
+            <select name="id_suc" class="form-control mb-2">
                 <option value="1">Querétaro</option>
                 <option value="3">Sanluis Potosi</option>
                 <option value="2">Guanajuato</option>
