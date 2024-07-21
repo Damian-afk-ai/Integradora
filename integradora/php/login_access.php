@@ -12,7 +12,7 @@ if (!empty($_POST)) {
     $conn = connectDatabase();
 
     // Hagamos una consulta para verificar si el correo pertenece a un administrador
-    $query_admin = "SELECT * FROM usuario WHERE correo_usu = '$email' AND contra_usu = '$password' AND est_usu = 1";
+    $query_admin = "SELECT * FROM usuario WHERE correo_usu = '$email' AND contra_usu = '$password' AND pri_usu = 1";
 
     // Ejecutamos la consulta
     $result_admin = mysqli_query($conn, $query_admin);
@@ -20,7 +20,6 @@ if (!empty($_POST)) {
     // Verificamos si la consulta devolvió algún resultado
     if (mysqli_num_rows($result_admin) == 1) {
         // Si existe como administrador, iniciamos sesión de administrador
-        session_start();
         $_SESSION['admin'] = true;
         header("Location: ./panel_control.php"); // Redirigimos al panel de administrador
         exit();
@@ -35,14 +34,13 @@ if (!empty($_POST)) {
     // Verificamos si la consulta devolvió algún resultado
     if (mysqli_num_rows($result_usuario) == 1) {
         // Si existe como cliente, iniciamos sesión de cliente
-        session_start();
         $usuario = mysqli_fetch_array($result_usuario);
         $_SESSION['usuario'] = true;
         $_SESSION['id_usu'] = $usuario['id_usu'];
         $_SESSION['nombre_usu'] = $usuario['nom_usu'];
 
         // Redirigimos al dashboard del cliente
-        header("Location: ./usuario/panel_usuario.php"); // Redirigimos al panel de cliente
+        header("Location: ../inicio.html"); // Redirigimos al panel de cliente
         exit();
     } else {
         // Si no existe en ninguna tabla, hay un error en las credenciales
@@ -56,7 +54,7 @@ if (!empty($_POST)) {
     // Si no se recibió nada desde el formulario no permitimos ningún acceso
     echo "<script>
             alert('Acceso denegado.');
-            window.location.href = '/HTML/landing_aw/integradora/l';
+            window.location.href = '/HTML/landing_aw/integradora/login.html';
           </script>";
     exit();
 }
