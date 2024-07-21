@@ -5,35 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Apollo13</title>
         <link rel="stylesheet" href="./css/inicio.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <header class="cabeza">
-            <div class="row">
-                <div class="logo">
-                    <img src="./img/logo.png" alt="Logo">
-                </div>
+        <header class="bg-dark sticky-top w-100">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#" class="navbar-brand">
+                        <img src="./img/logo.png" alt="Logo" height="60">
+                    </a>
+                    <ul class="nav fs-5">
+                        <li class="nav-item"><a href="./inicio.php" class="text-white nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./catalogo.php" class="text-white nav-link">Catalogo</a></li>
+                        <li class="nav-item"><a href="./login.html" class="text-white nav-link">Login</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="opciones">
-                <ul>
-                    <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="login.html">Iniciar sesión</a></li>
-                </ul>
-            </nav>
         </header>
         <!-- inicio Section -->
         <section id="eslogan">
             <div class="row">
                     <div class="col">
+                    <br>
                     <h1>Compra juegos a otro nivel</h1>
+                    <br>
                     <p>Cada juego es un mundo a descubrir</p>
                     <img src="./img/imagen_1.png" alt="">
+                    <br><br><br>
                 </div>
             </div>
         </section>
         <!-- Nosotros Section -->
         <section id="nosotros">
             <div class="row">
+                <br><br><br>
                 <h2>Acerca de nosotros</h2>
                 <div class="cols">
                     <div class="col">
@@ -41,6 +47,7 @@
                     </div>
                     <div class="col">
                         <img src="./img/imagen_2.png" alt="imagen.1">
+                        <br><br><br>
                     </div>
                 </div>
             </div>
@@ -48,6 +55,7 @@
         <!-- Beneficios y experencia Section -->
         <section id="experencia">
             <div class="row">
+                <br><br><br>
                 <h2>Experencia y Beneficios</h2>
                 <div class="cols">
                     <div class="col">
@@ -66,44 +74,6 @@
                             <p>Más de 10 años</p>
                             <p>Nuestros trabajadores tienen gran nivel de certificaciones</p>
                         
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Referencias Section -->
-        <section id="referencias">
-            <div class="row">
-                <h2>Referencias</h2>
-                <div class="cols">
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
-                    </div>
-                    <div class="col">
-                        <img src="./img/usuario.png" alt="">
-                        <h3>Nombre</h3>
-                        <p>Muy satisfecho con mi compra<br>⭐⭐⭐⭐⭐</p>
                     </div>
                 </div>
             </div>
