@@ -11,7 +11,7 @@ $user_data = mysqli_fetch_array($query_result);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edición de Usuario</title>
+    <title>Edición de USUARIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -25,13 +25,13 @@ $user_data = mysqli_fetch_array($query_result);
             <input type="text" class="form-control mb-2" name="nom_usu" required value="<?php  echo $user_data["nom_usu"]; ?>">
 
             <label class="form-label mb-2">Edad</label>
-            <input type="number" name="edad_usu" value="<?php echo $user_data['edad_usu']; ?>">
+            <input readonly type="text" name="edad_usu" value="<?php echo $user_data['edad_usu']; ?>">
 
             <label class="form-label mb-2">Fecha de nacimiento</label>
-            <input type="text" name="fech_usu" value="<?php echo $user_data['fech_usu']; ?>">
+            <input readonly type="text" name="fech_usu" value="<?php echo $user_data['fech_usu']; ?>">
 
             <label class="form-label mb-2">Ciudad</label>
-            <input type="text" name="ciudad_usu" value="<?php echo $user_data['ciudad_usu']; ?>">
+            <input readonly type="text" name="ciudad_usu" value="<?php echo $user_data['ciudad_usu']; ?>">
             <br>
             <label class="form-label mb-2">Correo</label>
             <input type="email" class="form-control mb-2" name="correo_usu" required value="<?php  echo $user_data["correo_usu"]; ?>">
@@ -41,8 +41,8 @@ $user_data = mysqli_fetch_array($query_result);
 
             <input type="hidden" name="est_usu" value="<?php echo $user_data['est_usu']; ?>">
 
-            <label class="form-label mb-2">Privilegio</label>
-            <select name="pri_usu">
+            <label class="form-label mb-2">Privilejio</label>
+            <select name="pri_usu" class="form-control mb-2">
                 <option value="2">Cliente</option>
                 <option value="1">Administrador</option>
             </select>
