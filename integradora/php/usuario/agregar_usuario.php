@@ -21,7 +21,7 @@
             <input type="date" class="form-control mb-2" name="fech_usu">
 
             <label class=" form-label mb-2">Ciudad</label>
-            <select name="ciudad_usu" required>
+            <select name="ciudad_usu" class="form-control mb-2" required>
                 <option value="">Selecciona tu estado</option>
                 <option value="Aguascalientes">Aguascalientes</option>
                 <option value="Baja California">Baja California</option>
@@ -68,7 +68,7 @@
             <input type="hidden" class="form-control mb-2" name="est_usu" required value = "1">
 
             <label class="form-label mb-2">Privilegio</label>
-            <select name="pri_usu">
+            <select name="pri_usu" class="form-control mb-2">
                 <option value="2">Cliente</option>
                 <option value="1">Administrador</option>
             </select>
