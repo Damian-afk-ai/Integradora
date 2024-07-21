@@ -27,7 +27,7 @@ if (!empty($_POST)) {
        // Si el correo ya existe en la base de datos, redirigimos al login con un mensaje de error
        echo "<script>
                alert('El correo ya está registrado.'); 
-               window.location.href = '/HTML/landing_aw/integradora/login.html';
+               window.location.href = '/web_b/integradora/login.html';
              </script>";
        exit();
    }
@@ -46,13 +46,13 @@ if (!empty($_POST)) {
    $_SESSION['numbre_usu'] = $nombre;
 
    // Redirigimos al dashboard del cliente
-   header("Location: /HTML/landing_aw/integradora/registrobien.html");
+   header("Location:/web_b/integradora/registrobien.html");
    exit();
 } else {
    // Si no se recibieron datos por POST, redirigimos al formulario de registro
    echo "<script>
            alert('Acceso denegado.');
-           window.location.href = '/HTML/landing_aw/integradora/login.html';
+           window.location.href = 'web_b/integradora/login.html';
          </script>";
    exit();
 }
