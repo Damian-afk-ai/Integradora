@@ -17,12 +17,12 @@ $query = "UPDATE USUARIO
 
 $stmt = mysqli_prepare($conn, $query);
 
-mysqli_stmt_bind_param($stmt, 'ssssssssi', 
+mysqli_stmt_bind_param($stmt, 'sssssi', 
     $_GET['nom_usu'], 
     $_GET['correo_usu'],
     $_GET['edad_usu'],
     $_GET['fech_usu'],
-    $_GET['ciudad_usu'], 
+    $_GET['eciudad_usu'], 
     $_GET['contra_usu'],
     $_GET['est_usu'],
     $_GET['pri_usu'],
