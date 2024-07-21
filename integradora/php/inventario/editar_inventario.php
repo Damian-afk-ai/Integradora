@@ -21,10 +21,10 @@ $user_data = mysqli_fetch_array($query_result);
             <input type="hidden" name="id_inv" value="<?php echo $user_data['id_inv']; ?>">
 
             <label class="form-label mb-2">Producto</label>
-            <input type="text" class="form-control mb-2" name="nom_pro" required readonly value="<?php  echo $user_data["nom_pro"]; ?>">
+            <input type="block" class="form-control mb-2" name="nom_pro" required value="<?php  echo $user_data["nom_pro"]; ?>">
 
             <label class="form-label mb-2">Sucursal</label>
-            <select name="id_suc">
+            <select name="id_suc" class="form-control mb-2">
                 <option value="1">Querétaro</option>
                 <option value="3">Sanluis Potosi</option>
                 <option value="2">Guanajuato</option>
