@@ -30,7 +30,7 @@ $user_data = mysqli_fetch_array($query_result);
             <input type="text" class="form-control mb-2" name="am_emp" required value="<?php  echo $user_data["am_emp"]; ?>">
 
             <label class=" form-label mb-2">Puesto</label>
-            <select name="puesto_emp" required>
+            <select name="puesto_emp" class="form-control mb-2" required>
                 <option value="Limpieza">Limpieza</option>
                 <option value="Director">Director</option>
                 <option value="Sub-Director">Sub-Director</option>
