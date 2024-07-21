@@ -20,8 +20,8 @@
             <label class=" form-label mb-2">Apellido Materno</label>
             <input type="text" class="form-control mb-2" name="am_emp">
 
-            <label class=" form-label mb-2">Puesto</label>
-            <select name="puesto_emp" required>
+            <label class="form-label mb-2">Puesto</label>
+            <select name="puesto_emp" class="form-control mb-2" required>
                 <option value="Limpieza">Limpieza</option>
                 <option value="Director">Director</option>
                 <option value="Sub-Director">Sub-Director</option>
